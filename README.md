@@ -53,5 +53,6 @@
 <h1 align="left"> </h1>
 
 ###
-
+<div align = "center">
   <video align = "right" src="https://github.com/AnkitUmredkar/E_commerce_app/assets/149374001/ea434da5-4cb6-4fd5-ba15-6c7702917353"></video>
+  </div>
