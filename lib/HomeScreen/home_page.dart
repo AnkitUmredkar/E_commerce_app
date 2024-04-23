@@ -201,7 +201,9 @@ class _HomePageState extends State<HomePage> {
                             onTap: () {
                               Navigator.of(context).pushNamed('/ProductScreen',
                                   arguments: index);
-                              count = 1; storeIndex = index; count2 = count;
+                              count = 1;
+                              storeIndex = index;
+                              count2 = count;
                               prise2 = productList[storeIndex]['prise'] * count;
                             },
                             child: productRow(

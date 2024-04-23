@@ -158,7 +158,13 @@ class _ProductPageState extends State<ProductPage> {
                     const SizedBox(height: 14),
                     Row(
                         children: List.generate(colorlist.length,
-                            (index) => colors(colorlist[index], index))),
+                            (index) => GestureDetector(
+                              onTap: (){
+                                setState(() {
+                                  selectedIndex = index;
+                                });
+                              },
+                                child: colors(colorlist[index], index,index == selectedIndex)))),
                     const SizedBox(height: 15),
                     Row(
                       children: [
@@ -183,16 +189,11 @@ class _ProductPageState extends State<ProductPage> {
                               GestureDetector(
                                   onTap: () {
                                     setState(() {
-                                      (count > 0) ? count-- : count = 0;
+                                      (count > 1) ? count-- : count = 1;
                                       count2 = count;
-                                      prise2 = (count2 > 0)
-                                          ? (productList[storeIndex]['prise'] *
-                                              count2)
-                                          : 0;
-                                      if (count == 0) {
-                                        prise2 = 0;
-                                        count2 = 0;
-                                      }
+                                      prise2 = (productList[storeIndex]
+                                              ['prise'] *
+                                          count2);
                                     });
                                   },
                                   child: const Icon(
@@ -244,7 +245,7 @@ class _ProductPageState extends State<ProductPage> {
                                   color: Colors.white,
                                 ),
                                 Text(
-                                  '${productList[storeIndex]['prise'] * count}',
+                                  '${productList[storeIndex]['prise'] * count}.0',
                                   style: const TextStyle(
                                     fontFamily: 'Poppins',
                                     color: Colors.white,
@@ -268,39 +269,13 @@ class _ProductPageState extends State<ProductPage> {
                                 }
                               }
                               if (!isContains) {
-                                if (count == 0) {
-                                  var snackBar = SnackBar(
-                                    backgroundColor: Colors.grey.shade900,
-                                    elevation: 0,
-                                    content: const Padding(
-                                      padding:
-                                          EdgeInsets.fromLTRB(0, 10, 0, 10),
-                                      child: Row(
-                                        children: [
-                                          Icon(Icons.shopping_cart,
-                                              color: Colors.white),
-                                          SizedBox(width: 8),
-                                          Text(
-                                            'Must be Atleast one Quantity',
-                                            style: TextStyle(
-                                                fontFamily: 'Poppins',
-                                                fontSize: 15),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                  );
-                                  ScaffoldMessenger.of(context)
-                                      .showSnackBar(snackBar);
-                                } else {
-                                  tick = true;
-                                  cartList.add({
-                                    'storeIndex': storeIndex,
-                                    'quantity': count2,
-                                    'prise': prise2,
-                                  });
-                                  Amount += prise2;
-                                }
+                                tick = true;
+                                cartList.add({
+                                  'storeIndex': storeIndex,
+                                  'quantity': count2,
+                                  'prise': prise2,
+                                });
+                                Amount += prise2;
                               } else {
                                 var snackBar = SnackBar(
                                   backgroundColor: Colors.grey.shade900,
@@ -414,19 +389,27 @@ List colorlist = [
   Colors.red,
 ];
 
-Container colors(Color color, int index) {
+Container colors(Color color, int index,bool isSelected) {
   return Container(
     height: 35,
     width: 35,
     margin: const EdgeInsets.only(right: 10),
     alignment: Alignment.center,
     decoration: BoxDecoration(
+      border: (isSelected)? Border.all(width: 1.5,color: Colors.white): null,
       shape: BoxShape.circle,
       color: color,
     ),
+    child: (isSelected)
+        ? const Icon(
+      Icons.check,
+      color: Colors.white,
+      size: 20,
+    )
+        : null,
   );
 }
-
+int selectedIndex = -1;
 List review = [
   '5,369',
   '8,546',

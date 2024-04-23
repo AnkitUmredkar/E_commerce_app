@@ -17,7 +17,7 @@ class _BookMarkPageState extends State<BookMarkPage> {
       child: Scaffold(
         backgroundColor: darkColor,
         body: Padding(
-          padding: const EdgeInsets.fromLTRB(21, 28, 21, 0),
+          padding: const EdgeInsets.fromLTRB(21, 25, 21, 0),
           child: SingleChildScrollView(
             physics: const BouncingScrollPhysics(),
             child: Column(

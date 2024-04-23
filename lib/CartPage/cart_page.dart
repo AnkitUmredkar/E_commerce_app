@@ -246,7 +246,7 @@ class _CartPageState extends State<CartPage> {
                               Amount = (Amount -
                                       productList[cartList[index]['storeIndex']]
                                           ['prise'])
-                                  .toInt();
+                                  .toDouble();
                             }
                           });
                         },
@@ -273,7 +273,7 @@ class _CartPageState extends State<CartPage> {
                           Amount = (Amount +
                                   productList[cartList[index]['storeIndex']]
                                       ['prise'])
-                              .toInt();
+                              .toDouble();
                         });
                       },
                       child: const Icon(
@@ -310,4 +310,4 @@ class _CartPageState extends State<CartPage> {
 }
 
 List cartList = [];
-int Amount = 0;
+double Amount = 0;

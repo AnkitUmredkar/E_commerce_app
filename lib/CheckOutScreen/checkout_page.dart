@@ -126,7 +126,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                         color: Colors.white,
                       ),
                       Text(
-                        '$Amount.0',
+                        '$Amount ',
                         style: const TextStyle(
                             color: Colors.white,
                             fontFamily: 'Poppins',
@@ -151,7 +151,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                         color: Colors.white,
                       ),
                       Text(
-                        '${Amount * (10 / 100)}',
+                        '${Amount * (10 / 100)} ',
                         style: const TextStyle(
                             color: Colors.white,
                             fontFamily: 'Poppins',
@@ -173,7 +173,8 @@ class _CheckoutPageState extends State<CheckoutPage> {
                         style: TextStyle(
                           color: Colors.white,
                           fontFamily: 'Poppins',
-                          fontSize: 18,
+                          fontSize: 19,
+                          fontWeight: FontWeight.bold
                         ),
                       ),
                       const Spacer(),
@@ -182,11 +183,13 @@ class _CheckoutPageState extends State<CheckoutPage> {
                         color: Colors.white,
                       ),
                       Text(
-                        '${Amount - (Amount * (10 / 100))}',
+                        '${Amount - (Amount * (10 / 100))} /-',
                         style: const TextStyle(
                             color: Colors.white,
                             fontFamily: 'Poppins',
-                            fontSize: 18),
+                            fontSize: 19,
+                          fontWeight: FontWeight.bold
+                        ),
                       ),
                     ],
                   ),
@@ -201,7 +204,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                             borderRadius: BorderRadius.circular(14),
                             color: Colors.white),
                         child: Text(
-                          'Order Now',
+                          'Place Order',
                           style: TextStyle(
                               color: darkColor,
                               fontWeight: FontWeight.w600,
