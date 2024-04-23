@@ -240,10 +240,12 @@ class _CartPageState extends State<CartPage> {
                             if (cartList[index]['quantity'] > 1) {
                               cartList[index]['quantity']--;
                               cartList[index]['prise'] =
-                                  productList[cartList[index]['storeIndex']]['prise'] *
+                                  productList[cartList[index]['storeIndex']]
+                                          ['prise'] *
                                       cartList[index]['quantity'];
                               Amount = (Amount -
-                                  productList[cartList[index]['storeIndex']]['prise'])
+                                      productList[cartList[index]['storeIndex']]
+                                          ['prise'])
                                   .toInt();
                             }
                           });
@@ -308,4 +310,4 @@ class _CartPageState extends State<CartPage> {
 }
 
 List cartList = [];
-int count3 = 0, totalCount = count2, Amount = 0;
+int Amount = 0;

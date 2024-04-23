@@ -185,7 +185,10 @@ class _ProductPageState extends State<ProductPage> {
                                     setState(() {
                                       (count > 0) ? count-- : count = 0;
                                       count2 = count;
-                                      prise2 = (count2 > 0) ? (productList[storeIndex]['prise'] * count2) : 0;
+                                      prise2 = (count2 > 0)
+                                          ? (productList[storeIndex]['prise'] *
+                                              count2)
+                                          : 0;
                                       if (count == 0) {
                                         prise2 = 0;
                                         count2 = 0;
@@ -265,12 +268,13 @@ class _ProductPageState extends State<ProductPage> {
                                 }
                               }
                               if (!isContains) {
-                                if(count == 0){
+                                if (count == 0) {
                                   var snackBar = SnackBar(
                                     backgroundColor: Colors.grey.shade900,
                                     elevation: 0,
                                     content: const Padding(
-                                      padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
+                                      padding:
+                                          EdgeInsets.fromLTRB(0, 10, 0, 10),
                                       child: Row(
                                         children: [
                                           Icon(Icons.shopping_cart,
@@ -288,8 +292,7 @@ class _ProductPageState extends State<ProductPage> {
                                   );
                                   ScaffoldMessenger.of(context)
                                       .showSnackBar(snackBar);
-                                }
-                                else{
+                                } else {
                                   tick = true;
                                   cartList.add({
                                     'storeIndex': storeIndex,
@@ -441,5 +444,5 @@ List review = [
   '7,593',
 ];
 
-int count2 = 0,count = 0, prise2 = 0;
+int count2 = 0, count = 0, prise2 = 0;
 int cartIndex = 0;
