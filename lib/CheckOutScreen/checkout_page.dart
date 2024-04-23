@@ -171,11 +171,10 @@ class _CheckoutPageState extends State<CheckoutPage> {
                       const Text(
                         'Total Payment',
                         style: TextStyle(
-                          color: Colors.white,
-                          fontFamily: 'Poppins',
-                          fontSize: 19,
-                          fontWeight: FontWeight.bold
-                        ),
+                            color: Colors.white,
+                            fontFamily: 'Poppins',
+                            fontSize: 19,
+                            fontWeight: FontWeight.bold),
                       ),
                       const Spacer(),
                       const Icon(
@@ -188,8 +187,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                             color: Colors.white,
                             fontFamily: 'Poppins',
                             fontSize: 19,
-                          fontWeight: FontWeight.bold
-                        ),
+                            fontWeight: FontWeight.bold),
                       ),
                     ],
                   ),

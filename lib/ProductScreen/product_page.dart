@@ -157,14 +157,16 @@ class _ProductPageState extends State<ProductPage> {
                             color: Colors.white)),
                     const SizedBox(height: 14),
                     Row(
-                        children: List.generate(colorlist.length,
+                        children: List.generate(
+                            colorlist.length,
                             (index) => GestureDetector(
-                              onTap: (){
-                                setState(() {
-                                  selectedIndex = index;
-                                });
-                              },
-                                child: colors(colorlist[index], index,index == selectedIndex)))),
+                                onTap: () {
+                                  setState(() {
+                                    selectedIndex = index;
+                                  });
+                                },
+                                child: colors(colorlist[index], index,
+                                    index == selectedIndex)))),
                     const SizedBox(height: 15),
                     Row(
                       children: [
@@ -389,26 +391,27 @@ List colorlist = [
   Colors.red,
 ];
 
-Container colors(Color color, int index,bool isSelected) {
+Container colors(Color color, int index, bool isSelected) {
   return Container(
     height: 35,
     width: 35,
     margin: const EdgeInsets.only(right: 10),
     alignment: Alignment.center,
     decoration: BoxDecoration(
-      border: (isSelected)? Border.all(width: 1.5,color: Colors.white): null,
+      border: (isSelected) ? Border.all(width: 1.5, color: Colors.white) : null,
       shape: BoxShape.circle,
       color: color,
     ),
     child: (isSelected)
         ? const Icon(
-      Icons.check,
-      color: Colors.white,
-      size: 20,
-    )
+            Icons.check,
+            color: Colors.white,
+            size: 20,
+          )
         : null,
   );
 }
+
 int selectedIndex = -1;
 List review = [
   '5,369',

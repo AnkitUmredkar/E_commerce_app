@@ -2,7 +2,6 @@ import 'package:e_commerce_app/CartPage/cart_page.dart';
 import 'package:e_commerce_app/utils/color.dart';
 import 'package:flutter/material.dart';
 import 'package:marquee_widget/marquee_widget.dart';
-
 import '../ProductScreen/product_page.dart';
 
 void main() {

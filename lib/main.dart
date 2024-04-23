@@ -4,7 +4,6 @@ import 'package:e_commerce_app/SplashScreen/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'BookMarkPage/book_mark_page.dart';
 import 'CheckOutScreen/checkout_page.dart';
-import 'HomeScreen/home_page.dart';
 
 void main() {
   runApp(MyApp());
