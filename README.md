@@ -7,8 +7,10 @@
 ###
 
 <div align = "center">
-https://github.com/AnkitUmredkar/E_commerce_app/assets/149374001/0c94f72e-6f3d-4487-8e83-6fe2c3ac6d5a
-</div>
+<img align = "left" height="550" src="https://github.com/AnkitUmredkar/E_commerce_app/assets/149374001/eaaa8ad2-6576-4be2-96e4-3ea422126b22" />
+  <img height="550" src=https://github.com/AnkitUmredkar/E_commerce_app/assets/149374001/c3e51cfb-f921-4fd7-a17a-b2212eccf097"" />
+  <img align = "right" height="550" src="https://github.com/AnkitUmredkar/E_commerce_app/assets/149374001/9d04e157-6c3e-4757-8719-0edcd06e018c"  />
+  </div>
 
 ###
 
@@ -17,21 +19,39 @@ https://github.com/AnkitUmredkar/E_commerce_app/assets/149374001/0c94f72e-6f3d-4
 ###
 
 <div align = "center">
-  <img align = "left" height="550" src="https://github.com/AnkitUmredkar/E_commerce_ui_components/assets/149374001/47eda11b-710b-4054-b7ad-efe7ff9d8eb5" />
-  <img height="550" src="https://github.com/AnkitUmredkar/E_commerce_ui_components/assets/149374001/1916c706-e265-4e60-b739-13b54a07987a" />
-  <img align = "right" height="550" src="https://github.com/AnkitUmredkar/E_commerce_ui_components/assets/149374001/d1c3aca8-8fbf-4470-9177-25ce457992a4"  />
-</div>
+<img align = "left" height="550" src="https://github.com/AnkitUmredkar/E_commerce_app/assets/149374001/9fe458b1-577c-430e-810f-9d19d33bb4a5" />
+  <img height="550" src="https://github.com/AnkitUmredkar/E_commerce_app/assets/149374001/f64f7b02-edf5-4092-a9bb-877e86b8b98b" />
+  <img align = "right" height="550" src="https://github.com/AnkitUmredkar/E_commerce_app/assets/149374001/54f0e56c-cc72-4aef-a59e-cf4bb3358f8d"  />
+  </div>
+
+###
+
+<h1 align="left"> </h1>
 
 ###
 
 <div align = "center">
-<a align="left" href="https://github.com/AnkitUmredkar/E_commerce_ui_components/blob/master/lib/home/Task%205/bolt.dart">-> 📂 Go To Dart File 📂<-</a>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://github.com/AnkitUmredkar/E_commerce_ui_components/blob/master/lib/home/Task%205/wall.dart">-> 📂 Go To Dart File 📂 <-</a>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a align="right" href="https://github.com/AnkitUmredkar/E_commerce_ui_components/blob/master/lib/home/Task%205/splitter.dart">-> 📂 Go To Dart File 📂 <-</a>
-</div>
+<img align = "left" height="550" src="https://github.com/AnkitUmredkar/E_commerce_app/assets/149374001/13312f70-53d0-4738-8be3-b1d76dad4da1" />
+  <img height="550" src="https://github.com/AnkitUmredkar/E_commerce_app/assets/149374001/b82b71d9-104d-4275-8502-fcbb7a5edcf6" />
+  <img align = "right" height="550" src="https://github.com/AnkitUmredkar/E_commerce_app/assets/149374001/e7c67941-1d5f-4492-bc38-5c2c6fb56416"  />
+  </div>
 
 ###
 
-<h1 align="left"></h1>
+<h1 align="left"> </h1>
+
+###
+
+
+<div align = "center">
+<img align = "left" height="550" src="https://github.com/AnkitUmredkar/E_commerce_app/assets/149374001/92038ef4-9da8-41e4-8c0c-bfa92393dcd5" />
+  <img height="550" src="https://github.com/AnkitUmredkar/E_commerce_app/assets/149374001/2653bb5c-bf7b-49d7-950d-d32541b5253d" />
+  </div>
+
+###
+
+<h1 align="left"> </h1>
+
+###
+
+  <video align = "right" src="https://github.com/AnkitUmredkar/E_commerce_app/assets/149374001/ea434da5-4cb6-4fd5-ba15-6c7702917353"></video>
