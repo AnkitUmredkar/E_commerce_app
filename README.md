@@ -1,16 +1,15 @@
-# e_commerce_app
+<h1 align="center"> 🔶🔸 E Commerce App 🔸🔶 </h1>
 
-A new Flutter project.
+###
 
-## Getting Started
+<h1 align="left"> </h1>
 
-This project is a starting point for a Flutter application.
+###
 
-A few resources to get you started if this is your first Flutter project:
+<div align = "center">
+  
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+https://github.com/AnkitUmredkar/E_commerce_app/assets/149374001/0c94f72e-6f3d-4487-8e83-6fe2c3ac6d5a
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+</div>
