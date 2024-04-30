@@ -50,17 +50,22 @@ class _HomePageState extends State<HomePage> {
                   margin: const EdgeInsets.only(bottom: 24),
                   child: Row(
                     children: [
-                      Container(
-                        height: 60,
-                        width: 60,
-                        alignment: Alignment.center,
-                        decoration: const BoxDecoration(
-                            color: Colors.black,
-                            shape: BoxShape.circle,
-                            image: DecorationImage(
-                              fit: BoxFit.cover,
-                              image: AssetImage('assets/image/me.jpeg'),
-                            )),
+                      GestureDetector(
+                        onTap:(){
+                          Navigator.of(context).pushNamed('/Profile');
+                        },
+                        child: Container(
+                          height: 60,
+                          width: 60,
+                          alignment: Alignment.center,
+                          decoration: const BoxDecoration(
+                              color: Colors.black,
+                              shape: BoxShape.circle,
+                              image: DecorationImage(
+                                fit: BoxFit.cover,
+                                image: AssetImage('assets/image/me.jpeg'),
+                              )),
+                        ),
                       ),
                       const Text.rich(
                         TextSpan(
@@ -194,6 +199,7 @@ class _HomePageState extends State<HomePage> {
                 ),
                 const SizedBox(height: 24),
                 Wrap(
+                  spacing: 20,
                   children: List.generate(
                       productList.length,
                       (index) => GestureDetector(
@@ -227,7 +233,7 @@ class _HomePageState extends State<HomePage> {
   Container Offers(double width, int discount, String letter, String img) {
     return Container(
       height: 200,
-      width: width - 41.0,
+      width: width - 41,
       alignment: Alignment.centerRight,
       padding: const EdgeInsets.fromLTRB(28, 22, 0, 0),
       decoration: BoxDecoration(
@@ -272,6 +278,7 @@ class _HomePageState extends State<HomePage> {
               ),
             ],
           ),
+          const Spacer(),
           Image.asset(img),
         ],
       ),
@@ -327,10 +334,10 @@ class _HomePageState extends State<HomePage> {
   Container productRow(var img, String data, int prise, int sold, double rate,
       int index, double width) {
     return Container(
-      height: 340,
+      height: 335,
       width: width / (2.37),
       alignment: Alignment.topLeft,
-      margin: const EdgeInsets.only(bottom: 29, right: 12),
+      margin: const EdgeInsets.only(bottom: 30),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -373,7 +380,15 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                 ),
-                Image.asset(img),
+                Expanded(
+                  child: Container(
+                    height: double.infinity,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                          image: AssetImage(img), fit: BoxFit.cover),
+                    ),
+                  ),
+                ),
               ],
             ),
           ),

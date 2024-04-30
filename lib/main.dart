@@ -4,9 +4,10 @@ import 'package:e_commerce_app/SplashScreen/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'BookMarkPage/book_mark_page.dart';
 import 'CheckOutScreen/checkout_page.dart';
+import 'Profile/profile.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
         '/ProductScreen': (context) => const ProductPage(),
         '/CartScreen': (context) => const CartPage(),
         '/CheckoutScreen': (context) => const CheckoutPage(),
+        '/Profile': (context) => const Profile(),
       },
     );
   }
