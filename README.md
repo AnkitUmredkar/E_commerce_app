@@ -46,6 +46,7 @@
 <div align = "center">
 <img align = "left" height="550" src="https://github.com/AnkitUmredkar/E_commerce_app/assets/149374001/92038ef4-9da8-41e4-8c0c-bfa92393dcd5" />
   <img height="550" src="https://github.com/AnkitUmredkar/E_commerce_app/assets/149374001/2653bb5c-bf7b-49d7-950d-d32541b5253d" />
+  <img align = "right" height="550" src="https://github.com/AnkitUmredkar/E_commerce_app/assets/149374001/5ddf55db-94d4-4688-99dd-0d1dad469916" />
   </div>
 
 ###
